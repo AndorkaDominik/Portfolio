@@ -1,0 +1,63 @@
+.footer{
+    height: auto;
+    background-color: #101010;
+    margin-top: 24px;
+}
+
+.footer p, .footer a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: var(--primary-color);
+}
+
+.footer .container{
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:.5fr 1fr 1fr;
+    padding-bottom: 140px;
+    padding-top: 40px;
+}
+
+.footer .socials .links, .footer .unmentioned .skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 3px;
+}
+
+
+.footer .built{
+    color: var(--primary-color);
+}
+
+.footer .built span{
+    text-decoration: line-through;
+}
+
+
+.footer .unmentioned .skills span{
+    color: #a5a5a5;
+}
+
+
+.select-lang{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-direction: row;
+}
+
+.select-lang a{
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+
+.select-lang a:hover {
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+}

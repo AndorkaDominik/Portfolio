@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Recoleta';
+  font-weight: 400;
+  src: url('https://s1.wp.com/i/fonts/recoleta/400.eot');
+  src: url('https://s1.wp.com/i/fonts/recoleta/400.eot?#iefix') format('embedded-opentype'),
+    url('https://s1.wp.com/i/fonts/recoleta/400.woff2') format('woff2'),
+    url('https://s1.wp.com/i/fonts/recoleta/400.woff') format('woff'),
+    url('https://s1.wp.com/i/fonts/recoleta/400.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fff;
+  --primary-color: #1cf300;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Recoleta, sans-serif;
+}
+
+p{
+  color: #101010;
+  font-family: Inconsolata, monospace;
+  font-weight: 200;
+}

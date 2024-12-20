@@ -1,0 +1,270 @@
+.intro .char:hover {
+    color: var(--primary-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+.hero {
+    max-width: 940px;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: auto;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.home .language{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1.5px solid #000;
+}
+
+.home .language:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.hero .name {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .name{
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.hero .name img:nth-child(1){
+    width: 90%;
+}
+
+.hero .hand{
+    width: 10%;
+    animation: wave 1.2s ease-in;
+}
+
+@keyframes wave {
+    0%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+
+    20%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(30deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+
+    40%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-30deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+    60%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(30deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+
+    80%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-30deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+}
+
+.intro p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+
+
+.bottom {
+    position: absolute;
+    top: auto;
+    bottom: 7%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottom a{
+    text-decoration: none;
+}
+
+.bottom p{
+    margin-bottom: 10px;
+}
+
+.bottom img{
+    width: 16px;
+}
+
+
+/* ---------------------------- PROJECTS ---------------------------- */
+.projects{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.projects a{
+    text-decoration: none;
+}
+
+.projects-heading {
+    color: #101010;
+    margin-top: 48px;
+    margin-left: 0;
+    padding-top: 40px;
+    padding-left: 0;
+    font-family: Recoleta, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.projects .cards{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-bottom: 60px;
+}
+
+.projects button {
+    all: unset;
+    cursor: pointer;
+}
+
+.projects .card{
+    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    max-height: 340px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background 0.5s ease-in-out;
+}
+
+.projects .card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.projects p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+}
+/* BG CHANGE */
+
+/* AndorkaVILL */
+#AndorkaVILL{
+    background-image: url('../../assets/Projects/andorkaVILL.jpg');
+    transition: background-image 0.5s ease-in-out;
+}
+
+#AndorkaVILL::before {
+    background-image: url('../../assets/Projects/Pre-AndorkaVill.png');
+}
+#AndorkaVILL:hover::before {
+    opacity: 1;
+}
+/* LearnJava */
+#LearnJava {
+    background-image: url('../../assets/Projects/learnJava.png');
+}
+
+#LearnJava::before {
+    background-image: url('../../assets/Projects/Pre-LearnJava.png');
+}
+
+#LearnJava:hover::before {
+    opacity: 1;
+}
+
+/* ReciMe */
+#ReciMe {
+    background-image: url('../../assets/Projects/ReciMe.png');
+}
+
+#ReciMe::before {
+    background-image: url('../../assets/Projects/Pre-ReciMe.png');
+}
+
+#ReciMe:hover::before {
+    opacity: 1;
+}
+
+/* Quiz */
+#Quiz {
+    background-image: url('../../assets/Projects/Quiz.png');
+}
+
+#Quiz::before {
+    background-image: url('../../assets/Projects/Pre-Quiz.png');
+}
+
+#Quiz:hover::before {
+    opacity: 1;
+}
+
+/* ConvertMe */
+#ConvertMe {
+    background-image: url('../../assets/Projects/ConvertMe.png');
+}
+
+#ConvertMe::before {
+    background-image: url('../../assets/Projects/Pre-ConvertMe.png');
+}
+
+#ConvertMe:hover::before {
+    opacity: 1;
+}
+
+/* EchoGPT */
+#EchoGPT {
+    background-image: url('../../assets/Projects/EchoGPT.png');
+}
+
+#EchoGPT::before {
+    background-image: url('../../assets/Projects/Pre1.png');
+}
+
+#EchoGPT:hover::before {
+    opacity: 1;
+}
+
+/* ------------------- BOTTOM ------------------------------- */
+
+.note{
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
