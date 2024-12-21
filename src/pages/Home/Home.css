@@ -260,6 +260,15 @@
     opacity: 1;
 }
 
+
+#AndorkaVILL {
+    background-image: url('/public/Projects/andorkaVILL.webp');
+}
+
+#ReciMe {
+    background-image: url('/Projects/ReciMe.webp');
+}
+
 /* ------------------- BOTTOM ------------------------------- */
 
 .note{
