@@ -25,36 +25,12 @@ const Home = () => {
     });
   }
 
-  function scrollToProjects() {
+    function scrollToProjects() {
       const projectsSection = document.getElementById('projects');
       if (!projectsSection) return;
-
-      const targetPosition = projectsSection.getBoundingClientRect().top;
-      const startPosition = window.pageYOffset;
-      const distance = targetPosition;
-      const duration = 2000; // Duration in milliseconds
-      let start = null;
-
-      window.requestAnimationFrame(function step(timestamp) {
-          if (!start) start = timestamp;
-          const progress = timestamp - start;
-          const easing = customEase(progress / duration);
-          window.scrollTo(0, startPosition + distance * easing);
-          if (progress < duration) {
-              window.requestAnimationFrame(step);
-          }
-      });
-
-      function customEase(t) {
-          if (t < 0.55) {
-              return 2 * t * t;
-          } else if (t < 0.7) {
-              return 1.5 * t;
-          } else {
-              return -1 + (4 - 2 * t) * t;
-          }
-      }
-  }
+    
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
 
   return (
     <div className="home">
