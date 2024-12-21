@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import "./ProjectHeader.css"
-import Click from '../../assets/Click.png'
+import Click from '../../assets/click.png'
 
 const Project = ({title, descript, team, img, website}) => {
 
