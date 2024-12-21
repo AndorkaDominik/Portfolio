@@ -1,6 +1,8 @@
 // src/components/Home.js
 import React, { useEffect, useState } from 'react';
 import './Home.css'
+import '/backgroundChange.css'
+
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom';
