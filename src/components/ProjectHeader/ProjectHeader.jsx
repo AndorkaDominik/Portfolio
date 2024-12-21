@@ -1,12 +1,41 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import "./ProjectHeader.css"
 import Click from '../../assets/Click.png'
 
 const Project = ({title, descript, team, img, website}) => {
+
+  const [HU, setHU] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname.includes("/HU/")) {
+      setHU(true);
+    } else {
+      setHU(false);
+    }
+  }, [location]); 
+  
+  console.log(location);
+
+  let HULink = "/HU" + location.pathname;
+  let ENGLink = location.pathname.replace("/HU", "");
+
+  console.log(HULink);
+  console.log(ENGLink);
+
   return (
     <div className='project'>
-      <Link to={'/'} className='takeME'>Take me home</Link>  
+      <div className="nav">
+        <Link to={'/'} className='takeME'>Take me home</Link>
+        {HU ? 
+        <Link to={ENGLink} className='language'>ENG</Link>
+        : 
+        <Link to={HULink} className='language'>HU</Link>
+        }
+
+      </div>
+        
       <h2 className="projects-heading">{title}</h2>  
       <div className="description">
         <p className='main-desc'>{descript}</p>

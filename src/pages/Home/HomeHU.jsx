@@ -9,7 +9,23 @@ import Name from "../../assets/name3.png";
 import Hand from "../../assets/hand.png";
 import Arrow from "../../assets/arrowdown.png";
 
+import { useLocation } from "react-router-dom";
+
+function MyDocument() {
+  const location = useLocation();
+        
+  if (location.pathname.includes("/HU/")) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+  return null;
+}
+
 const Home = () => {
+
+  MyDocument();
 
   const handleScroll = () => {
     window.scrollBy({ top: 550, behavior: 'smooth' });
@@ -79,30 +95,30 @@ const Home = () => {
         <h2 className='projects-heading' >Projektek</h2>
 
         <div className="cards">
-          <button to={'/AndorkaVILL/'}>
+          <Link to={'/HU/projects/AndorkaVILL/'} onClick={() => scrollToTop()}>
             <div className="card" id='AndorkaVILL'></div>
             <p>Andorka-VILL kft.</p>
-          </button>
-          <button to={'/LearnJava/'}>
+          </Link>
+          <Link to={'/HU/projects/LearnJava/'} onClick={() => scrollToTop()}>
             <div className="card" id='LearnJava'></div>
             <p>LearnJava</p>
-          </button>
-          <button to={'/EchoGPT/'}>
+          </Link>
+          <Link to={'/HU/projects/EchoGPT/'} onClick={() => scrollToTop()}>
             <div className="card" id='EchoGPT'></div>
             <p>EchoGPT</p>
-          </button>
-          <button to={'/ConvertMe/'}>
+          </Link>
+          <Link to={'/HU/projects/ConvertMe/'} onClick={() => scrollToTop()}>
             <div className="card" id='ConvertMe'></div>
             <p>ConvertMe</p>
-          </button>
-          <button to={'/Quiz/'}>
+          </Link>
+          <Link to={'/HU/projects/Quiz/'} onClick={() => scrollToTop()}>
             <div className="card" id='Quiz'></div>
             <p>Quiz</p>
-          </button>
-          <button to={'/ReciMe/'}>
+          </Link>
+          <Link to={'/HU/projects/ReciMe/'} onClick={() => scrollToTop()}>
             <div className="card" id='ReciMe'></div>
             <p>ReciMe</p>
-          </button>
+          </Link>
         </div>
       </div>
 

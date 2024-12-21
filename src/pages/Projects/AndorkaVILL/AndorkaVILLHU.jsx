@@ -9,18 +9,17 @@ import ProofImg from "../../../assets/Showcase/AndorkaVillEmailjs.png";
 import BottomImg from '../../../assets/Shapes/impact-bottom.png';
 
 const team = [
-  '1 Software Developer',
-  '1 Electrical Technician ',
-  '1 Cooling and Ventilation System Installer',
+  '1 Szoftverfejlesztő',
+  '1 Erősáramú elektrotechnikus',
+  '1 Hűtő-, és Légtechnikai Rendszerszerelő',
 ];
 
-
-const AndorkaVILL = () => {
+const AndorkaVILLHU = () => {
   return (
     <div className='project-container'>
         <ProjectHeader 
           title="Andorka-Vill kft. landing page" 
-          descript="For Andorka-Vill Kft., I developed a user-friendly and responsive landing page aimed at presenting the company's services and expertise in the electrical industry."
+          descript="Az Andorka-Vill Kft. számára egy felhasználóbarát és reszponzív landing page-t fejlesztettem, amely a cég szolgáltatásait és szakértelmét mutatja be az elektromos ipar területén."
           team={team}
           img={HeroImg}
           website="https://andorkavk.hu/"
@@ -29,11 +28,11 @@ const AndorkaVILL = () => {
 
         <div className="impact">
           <div className="container">
-            <h2 className="projects-heading">How did I have Impact?</h2>  
+            <h2 className="projects-heading">Hogyan volt hatásom?</h2>  
             <div className="points">
-              <p>#1: Designed and developed the entire website independently</p>
-              <p>#2: Actively resolved technical challenges</p>
-              <p>#3: Engaged extensively with clients to gather requirements and provide tailored solutions</p>
+              <p>#1: Teljes mértékben én terveztem és fejlesztettem a weboldalt</p>
+              <p>#2: Aktívan oldottam meg technikai kihívásokat</p>
+              <p>#3: Kapcsolatban voltam az ügyfelekkel, hogy összegyűjtsem az igényeiket és személyre szabott megoldásokat biztosítsak számukra</p>
             </div>
 
             <div className="images">
@@ -53,29 +52,29 @@ const AndorkaVILL = () => {
 
       <div className="result">
         <div className="container">
-          <h2 className="projects-heading">How did it do?</h2>  
+          <h2 className="projects-heading">Hogyan teljesített?</h2>  
           
           <div className="numbers">
             <div className="number-container">
               <h2 className='number'>1100%</h2>
-              <p className='explanation'>5 star reviews went up by</p>
+              <p className='explanation'>5 csillagos visszajelzés feljebb ment</p>
             </div>
             <div className="number-container">
               <h2 className='number'>+5</h2>
-              <p className='explanation'>New customers per day</p>
+              <p className='explanation'>Új ügyfelek naponta</p>
             </div>
             <div className="number-container">
               <h2 className='number'>+50</h2>
-              <p className='explanation'>New leads generated daily</p>
+              <p className='explanation'>Új kattintók naponta</p>
             </div>
 
             <div className="text-container">
-              <p>The data presented in the chart clearly indicates a success story for the company, as a significant number of clients have submitted requests for quotations for its services.</p>
+              <p>A grafikonon bemutatott adatok világosan egy siker történetét mutatnak a cég számára, mivel jelentős számú ügyfél nyújtott be árajánlatkérést a szolgáltatásaikra.</p>
             </div>
 
             <div className="proof">
               <img src={ProofImg} alt="" />
-              <p>Chart is from <a href="https://www.emailjs.com/">emailjs</a></p>
+              <p>A grafikon <a href="https://www.emailjs.com/">emailjs</a>-ről van.</p>
             </div>
           </div>
 
@@ -86,4 +85,4 @@ const AndorkaVILL = () => {
   )
 }
 
-export default AndorkaVILL
+export default AndorkaVILLHU

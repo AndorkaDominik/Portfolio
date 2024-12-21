@@ -1,7 +1,7 @@
 // src/components/Footer/Footer.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -11,6 +11,26 @@ const Footer = () => {
         behavior: 'smooth', 
     });
     }
+
+  const [HU, setHU] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname.includes("/HU/")) {
+      setHU(true);
+    } else {
+      setHU(false);
+    }
+  }, [location]); 
+  
+  console.log(location);
+
+  let HULink = "/HU" + location.pathname;
+  let ENGLink = location.pathname.replace("/HU", "");
+
+  console.log("HULink: " + HULink);
+  console.log("ENGLink: " + ENGLink);
+ 
 
   return (
     <footer className="footer">
@@ -39,8 +59,11 @@ const Footer = () => {
         <div className="lang">
           <p className='built'>Készült <span>szeretettel</span> őrülettel a szabadidőmben</p>
           <div className="select-lang">
-            <Link to={'/'} onClick={scrollToTop}>EN</Link>
-            <Link to={'/HU/'} onClick={scrollToTop}>HU</Link>
+            {HU ? 
+              <Link to={ENGLink}>ENG</Link>
+              : 
+              <Link to={HULink}>HU</Link>
+            }
           </div>
         </div>
       </div>

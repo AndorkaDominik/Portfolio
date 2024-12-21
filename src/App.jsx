@@ -14,23 +14,26 @@ import Quiz from './pages/Projects/Quiz/Quiz.jsx';
 import ReciMe from './pages/Projects/ReciMe/ReciMe.jsx';
 import EchoGPT from './pages/Projects/EchoGPT/EchoGPT.jsx';
 
-const CheckPath = () => {
-  const location = useLocation();
-  const [isHungarian, setIsHungarian] = useState(false);
-
-  useEffect(() => {
-    if (location.pathname === '/HU/') {
-      setIsHungarian(true);
-    } else {
-      setIsHungarian(false);
-    }
-  }, [location]);
-
-  return isHungarian;
-};
+// HU
+import AndorkaVILLHU from './pages/Projects/AndorkaVILL/AndorkaVILLHU.jsx';
+import LearnJavaHU from './pages/Projects/LearnJava/LearnJavaHU.jsx';
+import ConvertMeHU from './pages/Projects/ConvertMe/ConvertMeHU.jsx';
+import ReciMeHU from './pages/Projects/ReciMe/ReciMeHU.jsx';
+import QuizHU from './pages/Projects/Quiz/QuizHU.jsx';
+import EchoGPTHU from './pages/Projects/EchoGPT/EchoGPTHU.jsx';
 
 function App() {
+  const [HU, setHU] = useState(false);
+  const location = useLocation();
 
+  useEffect(() => {
+    if (location.pathname.includes("/HU/")) {
+      setHU(true);
+    } else {
+      setHU(false);
+    }
+  }, [location]); 
+  
   return (
     <>
       <Routes>
@@ -43,8 +46,18 @@ function App() {
           <Route path='/projects/Quiz/' element={<Quiz />} />
           <Route path='/projects/ReciMe/' element={<ReciMe />} />
           <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
+
+          {/* HU */}
+          <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
+          <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
+          <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+          <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
+          <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
+          <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
+          <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+
       </Routes>
-      {CheckPath() ? <FooterHU /> : <Footer />}
+      {HU ? <FooterHU /> : <Footer />}
     </>
   )
 }

@@ -9,8 +9,10 @@ import Name from "../../assets/name3.png";
 import Hand from "../../assets/hand.png";
 import Arrow from "../../assets/arrowdown.png";
 
-const Home = () => {
+import { useLocation } from "react-router-dom";
 
+const Home = () => {
+  
   const handleScroll = () => {
     window.scrollBy({ top: 550, behavior: 'smooth' });
   };
