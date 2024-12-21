@@ -12,10 +12,6 @@ import Arrow from "../../assets/arrowdown.webp";
 
 import { useLocation } from "react-router-dom";
 
-import learnJava from '../../assets/Projects/learnJava.webp';
-import convertMe from '../../assets/Projects/convertMe.webp';
-import andorkaVILL from '../../assets/Projects/AndorkaVILL.webp';
-
 const Home = () => {
   
   const handleScroll = () => {
