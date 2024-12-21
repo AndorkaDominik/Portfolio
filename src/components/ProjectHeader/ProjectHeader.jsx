@@ -27,7 +27,11 @@ const Project = ({title, descript, team, img, website}) => {
   return (
     <div className='project'>
       <div className="nav">
+        {HU ?
+        <Link to={'/'} className='takeME'>Vigyél a főoldalra</Link>
+        :
         <Link to={'/'} className='takeME'>Take me home</Link>
+      }
         {HU ? 
         <Link to={ENGLink} className='language'>ENG</Link>
         : 
@@ -40,7 +44,7 @@ const Project = ({title, descript, team, img, website}) => {
       <div className="description">
         <p className='main-desc'>{descript}</p>
         <div className="team">
-          <p>The team:</p>
+          {HU ? <p>A csapat:</p> : <p>The team:</p>}
           <ul>
             {team.map((member, index) => (
               <li key={index}>{member}</li>
@@ -51,7 +55,7 @@ const Project = ({title, descript, team, img, website}) => {
         <img draggable={false} src={img} alt={title + " showcase image"} className="showcaseImg"/>
 
         <a href={website} className='website'>
-          <h1>Website</h1>
+          {HU ? <h1>Weboldal</h1> : <h1>Website</h1>}
           <img src={Click} alt="" />
         </a>
     </div>

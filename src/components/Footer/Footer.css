@@ -46,10 +46,7 @@
 
 
 .select-lang{
-    display: flex;
-    gap: 20px;
     margin-top: 25px;
-    flex-direction: row;
 }
 
 .select-lang a{
@@ -60,4 +57,16 @@
 .select-lang a:hover {
     border: 1px solid var(--primary-color);
     padding: 5px 10px;
+}
+
+@media screen and (max-width: 616px) {
+    .footer .container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-left: 20px;
+    }
+
+    .footer .socials .links, .footer .unmentioned .skills{
+        margin-top: 0;
+    }
 }

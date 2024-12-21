@@ -29,10 +29,16 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   font-family: Recoleta, sans-serif;
+  user-select: none;
+}
+
+h2 {
+  line-height: 3rem;
 }
 
 p{
   color: #101010;
   font-family: Inconsolata, monospace;
   font-weight: 200;
+  user-select: none;
 }

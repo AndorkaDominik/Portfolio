@@ -50,7 +50,7 @@ const Footer = () => {
           <p>Emlegetett készségek:</p> 
           <div className="skills"> 
             <p>Étel lángra lobbantása: <span>Középszint</span></p> 
-            <p>Cappuccino helytelen írása: <span>Mester</span></p> 
+            <p>Cappucciono helytelen írása: <span>Mester</span></p> 
             <p>Egész csomag Doritos eltüntetés: <span>Mester</span></p> 
             <p>Béna tánc: <span>Minden nap fejlődöm</span></p> </div>
         </div>

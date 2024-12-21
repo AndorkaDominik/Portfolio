@@ -51,7 +51,7 @@ const ReciMeHU = () => {
 
       <div className="result">
         <div className="container">
-                    <h2 className="projects-heading">Az ő csodálatos főzése inspirált</h2>  
+                    <h2 className="projects-heading">Csodálatos ételei inspiráltak</h2>  
           
           <div className="numbers">
             <div className="number-container">
