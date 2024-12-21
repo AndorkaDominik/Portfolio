@@ -48,8 +48,9 @@ const ConvertMe = () => {
             <p style={{color: "#fff"}}><b>Funfact</b>: I had to use it here actually, cos I had to remove a background of an asset, but the tool which makes the background transparent won't accept <i>webp</i> format, so I had to convert the img on the website to <i>png</i></p>            
 
           </div>
-          <img src={BottomImg} className='bottomImg' alt="" />
-      </div>
+          <div className="bottomImg-container">
+            <img src={BottomImg} className='bottomImg' alt="" />
+          </div>      </div>
 
       <div className="result">
         <div className="container">

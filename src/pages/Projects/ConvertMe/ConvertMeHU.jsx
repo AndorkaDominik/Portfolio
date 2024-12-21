@@ -47,8 +47,9 @@ const ConvertMeHU = () => {
             </div>
             <p style={{color: "#fff"}}><b>Érdekesség</b>: Valójában itt is kellett használnom, mert el kellett távolítanom az egyik kép hátterét, de az eszköz, amely átlátszóvá teszi a hátteret, nem fogadja el a <i>webp</i> formátumot, így a weboldalon kellett konvertálnom a képet <i>png</i> formátumba</p>
           </div>
-          <img src={BottomImg} className='bottomImg' alt="" />
-      </div>
+          <div className="bottomImg-container">
+            <img src={BottomImg} className='bottomImg' alt="" />
+          </div>      </div>
 
       <div className="result">
         <div className="container">

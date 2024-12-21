@@ -240,13 +240,37 @@
     padding: .15rem .3rem;
 }
 
+@media screen and (max-width: 912px) {
+    .impact .bottomImg {
+        width: 150vw;
+        margin-bottom: 0;
+    }
+
+    .impact .bottomImg-container{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: -90px;
+        min-height: 50px;
+    }
+
+    .impact .projects-heading,  .impact p, .impact .images{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 910px) {
-    .project, .impact, .result{
+    .project, .result{
         padding-left: 10px;
         padding-right: 10px;
     }
 }
 @media screen and (max-width: 650px) {
+
+        .impact .bottomImg{
+            width: 250vw;
+        }
+
     .numbers{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -270,6 +294,10 @@
 }
 
 @media screen and (max-width: 325px) {
+
+    .impact .bottomImg {
+        width: 400vw;
+    }
 
     .project h2{
         padding-top: 0;

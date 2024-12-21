@@ -46,12 +46,13 @@ const ReciMeHU = () => {
               </div>
             </div>
           </div>
-          <img src={BottomImg} className='bottomImg' alt="" />
-      </div>
+          <div className="bottomImg-container">
+            <img src={BottomImg} className='bottomImg' alt="" />
+          </div>      </div>
 
       <div className="result">
         <div className="container">
-                    <h2 className="projects-heading">Csodálatos ételei inspiráltak</h2>  
+          <h2 className="projects-heading">Csodálatos ételei inspiráltak</h2>  
           
           <div className="numbers">
             <div className="number-container">

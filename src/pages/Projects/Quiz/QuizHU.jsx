@@ -46,8 +46,9 @@ const QuizHU = () => {
               </div>
             </div>
           </div>
-          <img src={BottomImg} className='bottomImg' alt="" />
-      </div>
+          <div className="bottomImg-container">
+            <img src={BottomImg} className='bottomImg' alt="" />
+          </div>      </div>
 
       <div className="result">
         <div className="container">

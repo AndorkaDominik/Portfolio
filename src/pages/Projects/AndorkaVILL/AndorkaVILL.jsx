@@ -48,7 +48,9 @@ const AndorkaVILL = () => {
               </div>
             </div>
           </div>
-          <img src={BottomImg} className='bottomImg' alt="" />
+          <div className="bottomImg-container">
+            <img src={BottomImg} className='bottomImg' alt="" />
+          </div>
       </div>
 
       <div className="result">
