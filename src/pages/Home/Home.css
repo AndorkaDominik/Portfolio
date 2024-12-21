@@ -186,8 +186,7 @@
 
 /* AndorkaVILL */
 #AndorkaVILL{
-    background-image: url('../../assets/Projects/andorkaVILL.webp');
-    transition: background-image 0.5s ease-in-out;
+    background-image: url('/src/assets/Projects/andorkaVILL.webp');
 }
 
 #AndorkaVILL::before {
