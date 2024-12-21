@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom';
 
-import Name from "../../assets/name.webp";
+import Name from "/name.webp";
 import Hand from "../../assets/hand.webp";
 import Arrow from "../../assets/arrowdown.webp";
 
