@@ -25,6 +25,12 @@
     font-size: 20px;
     padding: 10px 20px;
     border: 1.5px solid #000;
+    cursor: pointer;
+}
+
+.home .language:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .home .language:hover{

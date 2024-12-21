@@ -16,6 +16,12 @@
     font-size: 20px;
     padding: 10px 20px;
     border: 1.5px solid #000;
+    cursor: pointer;
+}
+
+.project .nav a:last-child:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .project .takeME{
