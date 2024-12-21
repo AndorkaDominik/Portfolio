@@ -69,7 +69,7 @@ const ReciMeHU = () => {
             </div>
           
             <div className="text-container">
-              <p>Minden étel, amit a barátnőm készít, egy mestermű—tele kreativitással, ízzel és szeretettel. Legyen szó egy gyors hétköznapi vacsoráról vagy egy bonyolult hétvégi finomságról, az ő ételei soha nem hagynak lenyűgözni. Szerettem volna létrehozni valamit, ami nemcsak bemutatja az ő hihetetlen főzőtudását, hanem megkönnyíti a receptjeinek megőrzését és megosztását is. Ezzel a receptalkalmazással tudtam megünnepelni tehetségét, és gondoskodni arról, hogy az ő finom alkotásai soha ne merüljenek feledésbe.</p>
+              <p>Minden étel, amit a barátnőm készít, egy mestermű—tele kreativitással, ízzel és szeretettel. Legyen szó egy gyors hétköznapi vacsoráról vagy egy bonyolult hétvégi finomságról, az ő ételei mindig lenyűgöznek. Szerettem volna létrehozni valamit, ami nemcsak bemutatja az ő hihetetlen főzőtudását, hanem megkönnyíti a receptjeinek megőrzését és megosztását is. Ezzel a receptalkalmazással tudtam megünnepelni tehetségét, és gondoskodni arról, hogy az ő finom alkotásai soha ne merüljenek feledésbe.</p>
             </div>
 
             <div className="proof">
