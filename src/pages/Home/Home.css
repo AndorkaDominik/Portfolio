@@ -183,7 +183,81 @@
     margin-bottom: 20px;
 }
 /* BG CHANGE */
+/* AndorkaVILL */
+#AndorkaVILL{
+    background-image: url('../../assets/Projects/andorkaVILL.webp');
+}
 
+#AndorkaVILL::before {
+    background-image: url('../../assets/Projects/Pre-AndorkaVill.webp');
+}
+#AndorkaVILL:hover::before {
+    opacity: 1;
+}
+/* LearnJava */
+#LearnJava {
+    background-image: url('../../assets/Projects/learnJava.webp');
+}
+
+#LearnJava::before {
+    background-image: url('../../assets/Projects/Pre-LearnJava.webp');
+}
+
+#LearnJava:hover::before {
+    opacity: 1;
+}
+
+/* ReciMe */
+#ReciMe {
+    background-image: url('../../assets/Projects/ReciMe.webp');
+}
+
+#ReciMe::before {
+    background-image: url('../../assets/Projects/Pre-ReciMe.webp');
+}
+
+#ReciMe:hover::before {
+    opacity: 1;
+}
+
+/* Quiz */
+#Quiz {
+    background-image: url('../../assets/Projects/Quiz.webp');
+}
+
+#Quiz::before {
+    background-image: url('../../assets/Projects/Pre-Quiz.webp');
+}
+
+#Quiz:hover::before {
+    opacity: 1;
+}
+
+/* ConvertMe */
+#ConvertMe {
+    background-image: url('../../assets/Projects/ConvertMe.webp');
+}
+
+#ConvertMe::before {
+    background-image: url('../../assets/Projects/Pre-ConvertMe.webp');
+}
+
+#ConvertMe:hover::before {
+    opacity: 1;
+}
+
+/* EchoGPT */
+#EchoGPT {
+    background-image: url('../../assets/Projects/EchoGPT.webp');
+}
+
+#EchoGPT::before {
+    background-image: url('../../assets/Projects/Pre1.webp');
+}
+
+#EchoGPT:hover::before {
+    opacity: 1;
+}
 /* ------------------- BOTTOM ------------------------------- */
 
 .note{
