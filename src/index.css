@@ -42,3 +42,7 @@ p{
   font-weight: 200;
   user-select: none;
 }
+
+ul, li{
+  user-select: none;
+}
