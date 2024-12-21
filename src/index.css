@@ -46,11 +46,11 @@ p{
 
 /* AndorkaVILL */
 #AndorkaVILL {
-  background-image: url('../../assets/Projects/andorkaVILL.webp');
+  background-image: url('./assets/Projects/andorkaVILL.webp');
 }
 
 #AndorkaVILL::before {
-  background-image: url('../../assets/Projects/Pre-AndorkaVill.webp');
+  background-image: url('/assets/Projects/Pre-AndorkaVill.webp');
 }
 
 #AndorkaVILL:hover::before {
@@ -59,11 +59,11 @@ p{
 
 /* LearnJava */
 #LearnJava {
-  background-image: url('../../assets/Projects/learnJava.webp');
+  background-image: url('/assets/Projects/learnJava.webp');
 }
 
 #LearnJava::before {
-  background-image: url('../../assets/Projects/Pre-LearnJava.webp');
+  background-image: url('/assets/Projects/Pre-LearnJava.webp');
 }
 
 #LearnJava:hover::before {
@@ -72,11 +72,11 @@ p{
 
 /* ReciMe */
 #ReciMe {
-  background-image: url('../../assets/Projects/ReciMe.webp');
+  background-image: url('/assets/Projects/ReciMe.webp');
 }
 
 #ReciMe::before {
-  background-image: url('../../assets/Projects/Pre-ReciMe.webp');
+  background-image: url('/assets/Projects/Pre-ReciMe.webp');
 }
 
 #ReciMe:hover::before {
@@ -85,11 +85,11 @@ p{
 
 /* Quiz */
 #Quiz {
-  background-image: url('../../assets/Projects/Quiz.webp');
+  background-image: url('/assets/Projects/Quiz.webp');
 }
 
 #Quiz::before {
-  background-image: url('../../assets/Projects/Pre-Quiz.webp');
+  background-image: url('/assets/Projects/Pre-Quiz.webp');
 }
 
 #Quiz:hover::before {
@@ -98,11 +98,11 @@ p{
 
 /* ConvertMe */
 #ConvertMe {
-  background-image: url('../../assets/Projects/ConvertMe.webp');
+  background-image: url('/assets/Projects/ConvertMe.webp');
 }
 
 #ConvertMe::before {
-  background-image: url('../../assets/Projects/Pre-ConvertMe.webp');
+  background-image: url('/assets/Projects/Pre-ConvertMe.webp');
 }
 
 #ConvertMe:hover::before {
@@ -111,11 +111,11 @@ p{
 
 /* EchoGPT */
 #EchoGPT {
-  background-image: url('../../assets/Projects/EchoGPT.webp');
+  background-image: url('/assets/Projects/EchoGPT.webp');
 }
 
 #EchoGPT::before {
-  background-image: url('../../assets/Projects/Pre1.webp');
+  background-image: url('/assets/Projects/Pre1.webp');
 }
 
 #EchoGPT:hover::before {
