@@ -1,12 +1,12 @@
 import React from 'react'
 
 import ProjectHeader from '../../../components/ProjectHeader/ProjectHeader'
-import HeroImg from '../../../assets/Showcase/Quiz.png';
-import Left from '../../../assets/Showcase/QuizTopLeft.png';
-import TopRight from '../../../assets/Showcase/QuizTopRight.png'
-import ImpactBottom from '../../../assets/Showcase/QuizBottom.png'
-import ProofImg from "../../../assets/Showcase/QuizProof.png";
-import BottomImg from '../../../assets/Shapes/impact-bottom.png';
+import HeroImg from '../../../assets/Showcase/Quiz.webp';
+import Left from '../../../assets/Showcase/QuizTopLeft.webp';
+import TopRight from '../../../assets/Showcase/QuizTopRight.webp'
+import ImpactBottom from '../../../assets/Showcase/QuizBottom.webp'
+import ProofImg from "../../../assets/Showcase/QuizProof.webp";
+import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
 
 const team = [
   '1 Szoftverfejlesztő (én)',

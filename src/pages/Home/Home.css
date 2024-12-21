@@ -186,23 +186,23 @@
 
 /* AndorkaVILL */
 #AndorkaVILL{
-    background-image: url('../../assets/Projects/andorkaVILL.jpg');
+    background-image: url('../../assets/Projects/andorkaVILL.webp');
     transition: background-image 0.5s ease-in-out;
 }
 
 #AndorkaVILL::before {
-    background-image: url('../../assets/Projects/Pre-AndorkaVill.png');
+    background-image: url('../../assets/Projects/Pre-AndorkaVill.webp');
 }
 #AndorkaVILL:hover::before {
     opacity: 1;
 }
 /* LearnJava */
 #LearnJava {
-    background-image: url('../../assets/Projects/learnJava.png');
+    background-image: url('../../assets/Projects/learnJava.webp');
 }
 
 #LearnJava::before {
-    background-image: url('../../assets/Projects/Pre-LearnJava.png');
+    background-image: url('../../assets/Projects/Pre-LearnJava.webp');
 }
 
 #LearnJava:hover::before {
@@ -211,11 +211,11 @@
 
 /* ReciMe */
 #ReciMe {
-    background-image: url('../../assets/Projects/ReciMe.png');
+    background-image: url('../../assets/Projects/ReciMe.webp');
 }
 
 #ReciMe::before {
-    background-image: url('../../assets/Projects/Pre-ReciMe.png');
+    background-image: url('../../assets/Projects/Pre-ReciMe.webp');
 }
 
 #ReciMe:hover::before {
@@ -224,11 +224,11 @@
 
 /* Quiz */
 #Quiz {
-    background-image: url('../../assets/Projects/Quiz.png');
+    background-image: url('../../assets/Projects/Quiz.webp');
 }
 
 #Quiz::before {
-    background-image: url('../../assets/Projects/Pre-Quiz.png');
+    background-image: url('../../assets/Projects/Pre-Quiz.webp');
 }
 
 #Quiz:hover::before {
@@ -237,11 +237,11 @@
 
 /* ConvertMe */
 #ConvertMe {
-    background-image: url('../../assets/Projects/ConvertMe.png');
+    background-image: url('../../assets/Projects/ConvertMe.webp');
 }
 
 #ConvertMe::before {
-    background-image: url('../../assets/Projects/Pre-ConvertMe.png');
+    background-image: url('../../assets/Projects/Pre-ConvertMe.webp');
 }
 
 #ConvertMe:hover::before {
@@ -250,11 +250,11 @@
 
 /* EchoGPT */
 #EchoGPT {
-    background-image: url('../../assets/Projects/EchoGPT.png');
+    background-image: url('../../assets/Projects/EchoGPT.webp');
 }
 
 #EchoGPT::before {
-    background-image: url('../../assets/Projects/Pre1.png');
+    background-image: url('../../assets/Projects/Pre1.webp');
 }
 
 #EchoGPT:hover::before {
@@ -280,6 +280,11 @@
 }
 
 @media screen and (max-width: 720px){
+    .hero .name {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .projects .cards .card {
         min-height: 120px;
     }
@@ -288,8 +293,8 @@
 @media screen and (max-width: 540px) {
 
     .intro p{
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
         margin-top: 10px;
     }
 
@@ -301,6 +306,23 @@
     }
 }
 @media screen and (max-width: 360px) {
+
+    .hero .name {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .name img:first-child{
+        width: 100%;
+        order: 1;
+    }
+    .hero .name img:last-child{
+        width: 70px;
+        z-index: -1;
+        margin-bottom: -30px;
+    }
+
     .projects .cards .card {
         min-height: 160px;
     }

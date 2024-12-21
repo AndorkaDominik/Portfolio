@@ -1,12 +1,12 @@
 import React from 'react'
 
 import ProjectHeader from '../../../components/ProjectHeader/ProjectHeader'
-import HeroImg from '../../../assets/Showcase/AndorkaVill.png';
-import Circles from '../../../assets/Shapes/circlesYellow.png';
-import ImpactBottom from '../../../assets/Showcase/ImpactBottomAndorkaVILL.png'
-import ImpactTopRight from '../../../assets/Showcase/ImpactTopRightAndorkaVILL.png'
-import ProofImg from "../../../assets/Showcase/AndorkaVillEmailjs.png";
-import BottomImg from '../../../assets/Shapes/impact-bottom.png';
+import HeroImg from '../../../assets/Showcase/AndorkaVill.webp';
+import Circles from '../../../assets/Shapes/circlesYellow.webp';
+import ImpactBottom from '../../../assets/Showcase/ImpactBottomAndorkaVILL.webp'
+import ImpactTopRight from '../../../assets/Showcase/ImpactTopRightAndorkaVILL.webp'
+import ProofImg from "../../../assets/Showcase/AndorkaVillEmailjs.webp";
+import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
 
 const team = [
   '1 Szoftverfejlesztő',

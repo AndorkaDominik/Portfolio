@@ -1,12 +1,12 @@
 import React from 'react'
 
 import ProjectHeader from '../../../components/ProjectHeader/ProjectHeader'
-import HeroImg from '../../../assets/Showcase/EchoGPT4.png';
-import Left from '../../../assets/Showcase/EchoGPTTopLeft.png';
-import TopRight from '../../../assets/Showcase/EchoGPTTopRight.png'
-import ImpactBottom from '../../../assets/Showcase/EchoGPTBottom.png'
-import ProofImg from "../../../assets/Showcase/EchoGPTProof.jpg";
-import BottomImg from '../../../assets/Shapes/impact-bottom.png';
+import HeroImg from '../../../assets/Showcase/EchoGPT.webp';
+import Left from '../../../assets/Showcase/EchoGPTTopLeft.webp';
+import TopRight from '../../../assets/Showcase/EchoGPTTopRight.webp'
+import ImpactBottom from '../../../assets/Showcase/EchoGPTBottom.webp'
+import ProofImg from "../../../assets/Showcase/EchoGPTProof.webp";
+import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
 
 const team = [
   '1 Szoftverfejlesztő (én)',

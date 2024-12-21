@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom';
 
-import Name from "../../assets/name3.png";
-import Hand from "../../assets/hand.png";
-import Arrow from "../../assets/arrowdown.png";
+import Name from "../../assets/name.webp";
+import Hand from "../../assets/hand.webp";
+import Arrow from "../../assets/arrowdown.webp";
 
 import { useLocation } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const Home = () => {
   function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: 'normal', 
+      // behavior: 'initial', 
     });
   }
 

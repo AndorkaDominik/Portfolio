@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import "./ProjectHeader.css"
-import Click from '../../assets/click.png'
+import Click from '../../assets/click.webp'
 
 const Project = ({title, descript, team, img, website}) => {
 
@@ -16,13 +16,13 @@ const Project = ({title, descript, team, img, website}) => {
     }
   }, [location]); 
   
-  console.log(location);
+  // console.log(location);
 
   let HULink = "/HU" + location.pathname;
   let ENGLink = location.pathname.replace("/HU", "");
 
-  console.log(HULink);
-  console.log(ENGLink);
+  // console.log(HULink);
+  // console.log(ENGLink);
 
   return (
     <div className='project'>

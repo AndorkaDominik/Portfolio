@@ -1,12 +1,12 @@
 import React from 'react'
 
 import ProjectHeader from '../../../components/ProjectHeader/ProjectHeader'
-import HeroImg from '../../../assets/Showcase/ConvertMe.png';
-import Left from '../../../assets/Showcase/ConvertMeTopLeft.png';
-import TopRight from '../../../assets/Showcase/ConvertMeTopRight.png'
-import ImpactBottom from '../../../assets/Showcase/ConvertMeBottom.png'
-import ProofImg from "../../../assets/Showcase/ConvertMeProof.jpg";
-import BottomImg from '../../../assets/Shapes/impact-bottom.png';
+import HeroImg from '../../../assets/Showcase/ConvertMe.webp';
+import Left from '../../../assets/Showcase/ConvertMeTopLeft.webp';
+import TopRight from '../../../assets/Showcase/ConvertMeTopRight.webp'
+import ImpactBottom from '../../../assets/Showcase/ConvertMeBottom.webp'
+import ProofImg from "../../../assets/Showcase/ConvertMeProof.webp";
+import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
 
 const team = [
   '1 Software Developer (me)',
