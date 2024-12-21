@@ -186,7 +186,7 @@
 
 /* AndorkaVILL */
 #AndorkaVILL{
-    background-image: url('/src/assets/Projects/andorkaVILL.webp');
+    background-image: url('../../assets/Projects/andorkaVILL.webp');
 }
 
 #AndorkaVILL::before {
@@ -258,15 +258,6 @@
 
 #EchoGPT:hover::before {
     opacity: 1;
-}
-
-
-#AndorkaVILL {
-    background-image: url('/public/Projects/andorkaVILL.webp');
-}
-
-#ReciMe {
-    background-image: url('/Projects/ReciMe.webp');
 }
 
 /* ------------------- BOTTOM ------------------------------- */
