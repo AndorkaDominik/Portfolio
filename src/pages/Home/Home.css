@@ -26,6 +26,7 @@
     padding: 10px 20px;
     border: 1.5px solid #000;
     cursor: pointer;
+    z-index: 5;
 }
 
 .home .language:hover{
@@ -33,10 +34,6 @@
     border-color: var(--primary-color);
 }
 
-.home .language:hover{
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
 
 .hero .name {
     display: flex;
