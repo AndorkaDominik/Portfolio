@@ -7,6 +7,7 @@ import TopRight from '../../../assets/Showcase/QuizTopRight.webp'
 import ImpactBottom from '../../../assets/Showcase/QuizBottom.webp'
 import ProofImg from "../../../assets/Showcase/QuizProof.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
+import NextProject from '../../../components/NextProject/NextProject';
 
 const team = [
   '1 Software Developer (me)',
@@ -77,10 +78,8 @@ const Quiz = () => {
             </div>
           </div>
         </div>
+        <NextProject NextProjectLink={"ReciMe"} />
       </div>
-
-
-
     </div>
   )
 }

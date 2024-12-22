@@ -7,6 +7,7 @@ import TopRight from '../../../assets/Showcase/ConvertMeTopRight.webp'
 import ImpactBottom from '../../../assets/Showcase/ConvertMeBottom.webp'
 import ProofImg from "../../../assets/Showcase/ConvertMeProof.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
+import NextProject from '../../../components/NextProject/NextProject';
 
 const team = [
   '1 Software Developer (me)',
@@ -78,11 +79,9 @@ const ConvertMe = () => {
               <img src={ProofImg} alt="ConvertMe App in Action" />
               </div>
           </div>
-
         </div>
+        <NextProject NextProjectLink={"Quiz"} />
       </div>
-
-
     </div>
   )
 }

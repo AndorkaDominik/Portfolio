@@ -8,6 +8,8 @@ import ImpactTopRight from '../../../assets/Showcase/ImpactTopRightAndorkaVILL.w
 import ProofImg from "../../../assets/Showcase/AndorkaVillEmailjs.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
 
+import NextProject from '../../../components/NextProject/NextProject';
+
 const team = [
   '1 Szoftverfejlesztő',
   '1 Erősáramú elektrotechnikus',
@@ -81,6 +83,7 @@ const AndorkaVILLHU = () => {
           </div>
 
         </div>
+        <NextProject NextProjectLink={"LearnJava"} />
       </div>
 
     </div>

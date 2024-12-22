@@ -34,7 +34,6 @@
     border-color: var(--primary-color);
 }
 
-
 .hero .name {
     display: flex;
     flex-direction: row;

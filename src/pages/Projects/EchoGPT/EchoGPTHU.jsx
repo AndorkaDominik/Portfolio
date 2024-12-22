@@ -7,6 +7,7 @@ import TopRight from '../../../assets/Showcase/EchoGPTTopRight.webp'
 import ImpactBottom from '../../../assets/Showcase/EchoGPTBottom.webp'
 import ProofImg from "../../../assets/Showcase/EchoGPTProof.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
+import NextProject from '../../../components/NextProject/NextProject';
 
 const team = [
   '1 Szoftverfejlesztő (én)',
@@ -76,9 +77,8 @@ const EchoGPTHU = () => {
             </div>
           </div>
         </div>
+        <NextProject NextProjectLink={"ConvertMe"} />
       </div>
-
-
     </div>
   )
 }

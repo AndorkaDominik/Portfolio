@@ -7,6 +7,7 @@ import TopRight from '../../../assets/Showcase/LearnJavaTopRight.webp'
 import ImpactBottom from '../../../assets/Showcase/LearnJavaBottom.webp'
 import ProofImg from "../../../assets/Showcase/LearnJavaProof.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
+import NextProject from '../../../components/NextProject/NextProject';
 
 const team = [
   '1 Software Developer (me)',
@@ -78,8 +79,8 @@ const LearnJava = () => {
           </div>
 
         </div>
+        <NextProject NextProjectLink={"EchoGPT"} />
       </div>
-
     </div>
   )
 }

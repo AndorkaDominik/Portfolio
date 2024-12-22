@@ -28,7 +28,7 @@ const Project = ({title, descript, team, img, website}) => {
     <div className='project'>
       <div className="nav">
         {HU ?
-        <Link to={'/'} className='takeME'>Vigyél a főoldalra</Link>
+        <Link to={'/HU/'} className='takeME'>Vigyél a főoldalra</Link>
         :
         <Link to={'/'} className='takeME'>Take me home</Link>
       }

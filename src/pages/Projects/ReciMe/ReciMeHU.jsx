@@ -7,6 +7,7 @@ import TopRight from '../../../assets/Showcase/ReciMeTopRight.webp'
 import ImpactBottom from '../../../assets/Showcase/ReciMeBottom.webp'
 import ProofImg from "../../../assets/Showcase/ReciMeProof.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
+import NextProject from '../../../components/NextProject/NextProject';
 
 const team = [
   '1 Szoftverfejlesztő (én)',
@@ -77,8 +78,8 @@ const ReciMeHU = () => {
             </div>
           </div>
         </div>
+        <NextProject NextProjectLink={"AndorkaVILL"} />
       </div>
-
     </div>
   )
 }

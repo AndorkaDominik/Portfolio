@@ -7,6 +7,7 @@ import ImpactBottom from '../../../assets/Showcase/ImpactBottomAndorkaVILL.webp'
 import ImpactTopRight from '../../../assets/Showcase/ImpactTopRightAndorkaVILL.webp'
 import ProofImg from "../../../assets/Showcase/AndorkaVillEmailjs.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
+import NextProject from '../../../components/NextProject/NextProject';
 
 const team = [
   '1 Software Developer',
@@ -82,6 +83,7 @@ const AndorkaVILL = () => {
           </div>
 
         </div>
+        <NextProject NextProjectLink={"LearnJava"} />
       </div>
 
     </div>
