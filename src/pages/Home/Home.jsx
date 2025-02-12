@@ -1,6 +1,8 @@
 // src/components/Home.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Home.css'
+
+// import VariableProximity from '../../components/VariableProximity/VariableProximity';
 
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter'
@@ -14,6 +16,8 @@ import { useLocation } from "react-router-dom";
 
 const Home = () => {
   
+  const containerRef = useRef(null);
+
   const handleScroll = () => {
     window.scrollBy({ top: 550, behavior: 'smooth' });
   };
@@ -39,7 +43,7 @@ const Home = () => {
         <div className="name">
           <img src={Name} alt="" /> <img src={Hand} alt="" className='hand' />
         </div>
-        <div className="intro">
+        <div className="intro" ref={containerRef} style={{position: 'relative'}}>
           <p>
             {Array.from("Junior Software Developer, focusing on design processes, shipping meaningful work, and making people’s lives better along the way.").map((char, index) => (
               <span key={index} className="char">{char}</span>
@@ -84,7 +88,7 @@ const Home = () => {
         </div>
       </div>
 
-        {/* <p className='note'>I've also written about Accessibility, Running your own story telling workshop and How the Amazon Echo could help Alzheimers patients. Feel free to have a read.</p> */}
+      {/* <p className='note'>I've also written about <Link to={"/Blog/Rendering"}>Rendering</Link>, <Link to={"/Blog/Colorful/"}>Colorful challange</Link>, and <Link to={"/Blog/Scripts/"}>Scripts</Link>. Feel free to have a read.</p> */}
     </div>
   );
 };

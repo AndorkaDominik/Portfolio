@@ -40,22 +40,30 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/HU/' element={<HomeHU />} />
 
-          <Route path='/projects/AndorkaVILL/' element={<AndorkaVILL />} />
-          <Route path='/projects/LearnJava/' element={<LearnJava />} />
-          <Route path='/projects/ConvertMe/' element={<ConvertMe />} />
-          <Route path='/projects/Quiz/' element={<Quiz />} />
-          <Route path='/projects/ReciMe/' element={<ReciMe />} />
-          <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
+          {/* --------------- ENG ----------------- */}
+            {/* Projects */}
+            <Route path='/projects/AndorkaVILL/' element={<AndorkaVILL />} />
+            <Route path='/projects/LearnJava/' element={<LearnJava />} />
+            <Route path='/projects/ConvertMe/' element={<ConvertMe />} />
+            <Route path='/projects/Quiz/' element={<Quiz />} />
+            <Route path='/projects/ReciMe/' element={<ReciMe />} />
+            <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
 
-          {/* HU */}
-          <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
-          <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
-          <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
-          <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
-          <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
-          <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
-          <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+            {/* Blog */}
 
+          {/* --------------- HU ----------------- */}
+            {/* Projects */}
+            <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
+            <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
+            <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+            <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
+            <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
+            <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
+            <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+
+            {/* Blog */}
+            
+            
       </Routes>
       {HU ? <FooterHU /> : <Footer />}
     </>
