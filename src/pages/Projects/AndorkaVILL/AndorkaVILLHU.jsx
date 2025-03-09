@@ -16,7 +16,13 @@ const team = [
   '1 Hűtő-, és Légtechnikai Rendszerszerelő',
 ];
 
+// Animation
+import semiCircle from '../../../assets/Shapes/semicircle.png';
+import { useRotation } from '../../../context/RotationContext';
+
 const AndorkaVILLHU = () => {
+  const { rotation } = useRotation(); 
+
   return (
     <div className='project-container'>
         <ProjectHeader 
@@ -30,11 +36,12 @@ const AndorkaVILLHU = () => {
 
         <div className="impact">
           <div className="container">
+            <img src={semiCircle} className='semicircle' alt="semicircle" id='topSemi' style={{ transform: `rotate(${rotation}deg)` }}  />
             <h2 className="projects-heading">Hogyan volt hatásom?</h2>  
             <div className="points">
               <p>#1: Teljes mértékben én terveztem és fejlesztettem a weboldalt</p>
-              <p>#2: Aktívan oldottam meg technikai kihívásokat</p>
-              <p>#3: Kapcsolatban voltam az ügyfelekkel, hogy összegyűjtsem az igényeiket és személyre szabott megoldásokat biztosítsak számukra</p>
+              <p>#2: Kapcsolatban voltam az ügyfelekkel, hogy összegyűjtsem az igényeiket és személyre szabott megoldásokat biztosítsak számukra</p>
+              <p>#3: Aktívan oldottam meg technikai kihívásokat</p>
             </div>
 
             <div className="images">
@@ -42,6 +49,7 @@ const AndorkaVILLHU = () => {
                 <img draggable={false} src={Circles} alt="" />
               </div>
               <div className="right-top">
+                <img src={semiCircle} className='semicircle' alt="semicircle" style={{ transform: `rotate(${rotation}deg)` }} />
                 <img draggable={false} src={ImpactTopRight} alt="" />
               </div>
               <div className="center">

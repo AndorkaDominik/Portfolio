@@ -14,8 +14,13 @@ const team = [
   '1 ChatGPT az összes kérdés legenerálásához'
 ];
 
+// Animation
+import semiCircle from '../../../assets/Shapes/semicircle.png';
+import { useRotation } from '../../../context/RotationContext';
 
 const QuizHU = () => {
+  const { rotation } = useRotation();
+
   return (
     <div className='project-container'>
         <ProjectHeader 
@@ -28,6 +33,7 @@ const QuizHU = () => {
 
         <div className="impact">
           <div className="container">
+            <img src={semiCircle} className='semicircle' alt="semicircle" id='topSemi' style={{ transform: `rotate(${rotation}deg)` }}  />
             <h2 className="projects-heading">Hogyan volt hatásom?</h2>  
             <div className="points">
               <p>#1: Az egész weboldalt önállóan terveztem és fejlesztettem</p>
@@ -40,6 +46,7 @@ const QuizHU = () => {
                 <img draggable={false} src={Left} alt="" />
               </div>
               <div className="right-top">
+                <img src={semiCircle} className='semicircle' alt="semicircle" style={{ transform: `rotate(${rotation}deg)` }} />
                 <img draggable={false} src={TopRight} alt="" />
               </div>
               <div className="center">

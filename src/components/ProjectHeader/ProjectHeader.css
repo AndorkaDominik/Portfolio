@@ -107,7 +107,53 @@
     margin-bottom: 0;
     padding-bottom: 64px;
     height: auto;
-    position: relative;}
+    position: relative;
+}
+
+.impact .container{
+    position: relative;
+    overflow: hidden;
+}
+
+.impact .container .semicircle{
+    position: absolute;
+    max-height: 250px;
+    max-width: 220px;
+    width: initial;
+    height: initial;
+}
+#topSemi{
+    top: -20px;
+    rotate: -190deg;
+    right: 40px;
+}
+
+.impact .container .right-top{
+    position: relative;
+}
+
+.impact .container .right-top .semicircle{
+    position: absolute;
+    z-index: 50;
+    top: -90px;
+    rotate: -70deg;
+    right: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .impact .container .semicircle {
+        max-height: 200px;
+        max-width: 150px;
+    }
+    .impact .container .right-top .semicircle, #topSemi{
+        right: -10px;
+    }
+
+    .impact .container .right-top .semicircle{
+        top: -70px;
+    }
+}
+
 
 .impact .img-container-bottom{
     width: 100%;

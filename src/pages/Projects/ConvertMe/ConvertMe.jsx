@@ -14,8 +14,13 @@ const team = [
   '1 Blob URL generator'
 ];
 
+// Animation
+import semiCircle from '../../../assets/Shapes/semicircle.png';
+import { useRotation } from '../../../context/RotationContext';
 
 const ConvertMe = () => {
+  const { rotation } = useRotation(); 
+
   return (
     <div className='project-container'>
         <ProjectHeader 
@@ -28,6 +33,7 @@ const ConvertMe = () => {
 
         <div className="impact">
           <div className="container">
+            <img src={semiCircle} className='semicircle' alt="semicircle" id='topSemi' style={{ transform: `rotate(${rotation}deg)` }}  />
             <h2 className="projects-heading">How did I have Impact?</h2>  
             <div className="points">
               <p>#1: Also, I got tired of waiting for any website to make the conversion</p>
@@ -40,6 +46,7 @@ const ConvertMe = () => {
                 <img draggable={false} src={Left} alt="" />
               </div>
               <div className="right-top">
+                <img src={semiCircle} className='semicircle' alt="semicircle" style={{ transform: `rotate(${rotation}deg)` }} />
                 <img draggable={false} src={TopRight} alt="" />
               </div>
               <div className="center">

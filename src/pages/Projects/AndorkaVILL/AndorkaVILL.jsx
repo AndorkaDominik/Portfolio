@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import ProjectHeader from '../../../components/ProjectHeader/ProjectHeader'
 import HeroImg from '../../../assets/Showcase/AndorkaVill.webp';
@@ -9,14 +9,20 @@ import ProofImg from "../../../assets/Showcase/AndorkaVillEmailjs.webp";
 import BottomImg from '../../../assets/Shapes/impact-bottom.webp';
 import NextProject from '../../../components/NextProject/NextProject';
 
+
 const team = [
   '1 Software Developer',
   '1 Electrical Technician ',
   '1 Cooling and Ventilation System Installer',
 ];
 
+// Animation
+import semiCircle from '../../../assets/Shapes/semicircle.png';
+import { useRotation } from '../../../context/RotationContext';
 
 const AndorkaVILL = () => {
+  const { rotation } = useRotation(); 
+
   return (
     <div className='project-container'>
         <ProjectHeader 
@@ -30,11 +36,12 @@ const AndorkaVILL = () => {
 
         <div className="impact">
           <div className="container">
-            <h2 className="projects-heading">How did I have Impact?</h2>  
+            <img src={semiCircle} className='semicircle' alt="semicircle" id='topSemi' style={{ transform: `rotate(${rotation}deg)` }}  />
+            <h2 className="projects-heading">How did I have impact?</h2>  
             <div className="points">
               <p>#1: Designed and developed the entire website independently</p>
-              <p>#2: Actively resolved technical challenges</p>
-              <p>#3: Engaged extensively with clients to gather requirements and provide tailored solutions</p>
+              <p>#2: Engaged extensively with clients to gather requirements and provide tailored solutions</p>
+              <p>#3: Actively resolved technical challenges</p>
             </div>
 
             <div className="images">
@@ -42,6 +49,7 @@ const AndorkaVILL = () => {
                 <img draggable={false} src={Circles} alt="" />
               </div>
               <div className="right-top">
+                <img src={semiCircle} className='semicircle' alt="semicircle" style={{ transform: `rotate(${rotation}deg)` }} />
                 <img draggable={false} src={ImpactTopRight} alt="" />
               </div>
               <div className="center">

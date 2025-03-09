@@ -22,6 +22,9 @@ import ReciMeHU from './pages/Projects/ReciMe/ReciMeHU.jsx';
 import QuizHU from './pages/Projects/Quiz/QuizHU.jsx';
 import EchoGPTHU from './pages/Projects/EchoGPT/EchoGPTHU.jsx';
 
+// Animation
+import { RotationProvider } from './context/RotationContext.jsx';
+
 function App() {
   const [HU, setHU] = useState(false);
   const location = useLocation();
@@ -36,36 +39,39 @@ function App() {
   
   return (
     <>
+      <RotationProvider>
+
       <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/HU/' element={<HomeHU />} />
 
           {/* --------------- ENG ----------------- */}
-            {/* Projects */}
-            <Route path='/projects/AndorkaVILL/' element={<AndorkaVILL />} />
-            <Route path='/projects/LearnJava/' element={<LearnJava />} />
-            <Route path='/projects/ConvertMe/' element={<ConvertMe />} />
-            <Route path='/projects/Quiz/' element={<Quiz />} />
-            <Route path='/projects/ReciMe/' element={<ReciMe />} />
-            <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
+              {/* Projects */}
+              <Route path='/projects/AndorkaVILL/' element={<AndorkaVILL />} />
+              <Route path='/projects/LearnJava/' element={<LearnJava />} />
+              <Route path='/projects/ConvertMe/' element={<ConvertMe />} />
+              <Route path='/projects/Quiz/' element={<Quiz />} />
+              <Route path='/projects/ReciMe/' element={<ReciMe />} />
+              <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
 
-            {/* Blog */}
+              {/* Blog */}
 
-          {/* --------------- HU ----------------- */}
-            {/* Projects */}
-            <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
-            <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
-            <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
-            <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
-            <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
-            <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
-            <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
-
+            {/* --------------- HU ----------------- */}
+              {/* Projects */}
+              <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
+              <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
+              <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+              <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
+              <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
+              <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
+              <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+              <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
             {/* Blog */}
             
             
       </Routes>
       {HU ? <FooterHU /> : <Footer />}
+      </RotationProvider>
     </>
   )
 }
