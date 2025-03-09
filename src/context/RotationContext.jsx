@@ -8,7 +8,7 @@ export const RotationProvider = ({ children }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const newRotation = scrollTop * 0.04;
+      const newRotation = scrollTop * 0.05;
       setRotation(newRotation);
     };
 
