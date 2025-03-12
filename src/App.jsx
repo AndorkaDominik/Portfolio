@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 //pages
 import Home from './pages/Home/Home.jsx';
 import HomeHU from './pages/Home/HomeHU.jsx';
+// Not Found
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer/Footer.jsx';
@@ -38,41 +40,40 @@ function App() {
   }, [location]); 
   
   return (
-    <>
       <RotationProvider>
+        <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/HU/' element={<HomeHU />} />
 
-      <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/HU/' element={<HomeHU />} />
+            {/* --------------- ENG ----------------- */}
+                {/* Projects */}
+                <Route path='/projects/AndorkaVILL/' element={<AndorkaVILL />} />
+                <Route path='/projects/LearnJava/' element={<LearnJava />} />
+                <Route path='/projects/ConvertMe/' element={<ConvertMe />} />
+                <Route path='/projects/Quiz/' element={<Quiz />} />
+                <Route path='/projects/ReciMe/' element={<ReciMe />} />
+                <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
 
-          {/* --------------- ENG ----------------- */}
-              {/* Projects */}
-              <Route path='/projects/AndorkaVILL/' element={<AndorkaVILL />} />
-              <Route path='/projects/LearnJava/' element={<LearnJava />} />
-              <Route path='/projects/ConvertMe/' element={<ConvertMe />} />
-              <Route path='/projects/Quiz/' element={<Quiz />} />
-              <Route path='/projects/ReciMe/' element={<ReciMe />} />
-              <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
+                {/* Blog */}
 
+              {/* --------------- HU ----------------- */}
+                {/* Projects */}
+                <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
+                <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
+                <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+                <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
+                <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
+                <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
+                <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
+                <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
               {/* Blog */}
-
-            {/* --------------- HU ----------------- */}
-              {/* Projects */}
-              <Route path='/HU/projects/AndorkaVILL/' element={<AndorkaVILLHU />} />
-              <Route path='/HU/projects/LearnJava/' element={<LearnJavaHU />} />
-              <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
-              <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
-              <Route path='/HU/projects/Quiz/' element={<QuizHU />} />
-              <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
-              <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
-              <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
-            {/* Blog */}
-            
-            
-      </Routes>
-      {HU ? <FooterHU /> : <Footer />}
+              
+              
+              {/* Not Found */}
+              <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
+        </Routes>
+        {HU ? <FooterHU /> : <Footer />}
       </RotationProvider>
-    </>
   )
 }
 
