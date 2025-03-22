@@ -52,7 +52,7 @@ const Project = ({title, descript, team, img, website}) => {
           </ul>
         </div>
       </div>
-        <img draggable={false} src={img} alt={title + " showcase image"} className="showcaseImg"/>
+        <img tabIndex={-1} draggable={false} src={img} alt={title + " showcase image"} className="showcaseImg"/>
 
         <a href={website} className='website'>
           {HU ? <h1>Weboldal</h1> : <h1>Website</h1>}
