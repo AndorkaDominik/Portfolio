@@ -1,0 +1,25 @@
+.marquee-wrapper {
+    padding-block: 1rem;
+    background-color: white;
+    max-width: 940px;
+    width: 100%;
+}
+
+.marquee-container {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 3.5rem;
+    padding-right: 3.5rem;
+    flex-shrink: 0;
+}
+
+.marquee-image {
+    height: 50px;
+    user-select: none;
+    pointer-events: none;
+}

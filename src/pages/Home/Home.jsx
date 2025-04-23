@@ -14,6 +14,8 @@ import Arrow from "../../assets/arrowdown.webp";
 
 import { useLocation } from "react-router-dom";
 
+import Marquee from '../../components/Marquee/Marquee';
+
 const Home = () => {
   
   const containerRef = useRef(null);
@@ -57,8 +59,13 @@ const Home = () => {
         </div>
       </div>
 
+      
       <div className="projects" id='projects'>
         <h2 className='projects-heading' >Projects</h2>
+
+        <div className="techStack">
+          {/* <Marquee /> */}
+        </div>
 
         <div className="cards">
           <Link to={'/projects/AndorkaVILL/'} onClick={() => scrollToTop()}>
