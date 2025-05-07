@@ -13,3 +13,6 @@ https://www.myfonts.com/products/black-recoleta-589600?queryId=6138408a06f22ce7c
 https://www.jay-clark.co.uk/
 
 Laptop szín #638CC9
+
+### Current technologies
+https://andrijaweb.vercel.app/

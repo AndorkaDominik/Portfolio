@@ -11,6 +11,8 @@ import Arrow from "../../assets/arrowdown.webp";
 
 import { useLocation } from "react-router-dom";
 
+import TechnologiesHU from '../../components/Technologies/TechnologiesHU';
+
 function MyDocument() {
   const location = useLocation();
         
@@ -37,39 +39,14 @@ const Home = () => {
       behavior: 'smooth', 
     });
   }
-  
+
   function scrollToProjects() {
-        const projectsSection = document.getElementById('projects');
-        if (!projectsSection) return;
-
-        const targetPosition = projectsSection.getBoundingClientRect().top;
-        const startPosition = window.pageYOffset;
-        const distance = targetPosition;
-        const duration = 2000; // Duration in milliseconds
-        let start = null;
-
-        window.requestAnimationFrame(function step(timestamp) {
-            if (!start) start = timestamp;
-            const progress = timestamp - start;
-            const easing = customEase(progress / duration);
-            window.scrollTo(0, startPosition + distance * easing);
-            if (progress < duration) {
-                window.requestAnimationFrame(step);
-            }
-        });
-
-        function customEase(t) {
-            if (t < 0.55) {
-                return 2 * t * t;
-            } else if (t < 0.7) {
-                return 1.5 * t;
-            } else {
-                return -1 + (4 - 2 * t) * t;
-            }
-        }
+      const projectsSection = document.getElementById('technologies');
+      if (!projectsSection) return;
+    
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
     }
-
-
+  
   return (
     <div className="home">
       <Link to={'/'} className='language'>ENG</Link>
@@ -90,6 +67,8 @@ const Home = () => {
             <img src={Arrow} className='arrow' alt="" />
         </div>
       </div>
+
+      <TechnologiesHU />
 
       <div className="projects" id='projects'>
         <h2 className='projects-heading' >Projektek</h2>

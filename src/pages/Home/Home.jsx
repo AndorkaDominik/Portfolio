@@ -15,10 +15,13 @@ import Arrow from "../../assets/arrowdown.webp";
 import { useLocation } from "react-router-dom";
 
 import Marquee from '../../components/Marquee/Marquee';
+import Technologies from '../../components/Technologies/Technologies';
 
 const Home = () => {
   
   const containerRef = useRef(null);
+
+  const titleRef = useRef(null);
 
   const handleScroll = () => {
     window.scrollBy({ top: 550, behavior: 'smooth' });
@@ -31,12 +34,12 @@ const Home = () => {
     });
   }
 
-    function scrollToProjects() {
-      const projectsSection = document.getElementById('projects');
-      if (!projectsSection) return;
-    
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  function scrollToProjects() {
+    const projectsSection = document.getElementById('technologies');
+    if (!projectsSection) return;
+  
+    projectsSection.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div className="home">
@@ -59,10 +62,12 @@ const Home = () => {
         </div>
       </div>
 
+      <Technologies titleRef={titleRef} />
+
       
       <div className="projects" id='projects'>
         <h2 className='projects-heading' >Projects</h2>
-
+        <p className='project-subheading'>A selection of personal and client-based projects showcasing my skills in web development, software development, and technical content creation.</p>
         <div className="techStack">
           {/* <Marquee /> */}
         </div>
