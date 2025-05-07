@@ -6,7 +6,7 @@
 .hero {
     max-width: 940px;
     margin: 0 auto;
-    height: 100vh;
+    height: 100dvh;
     min-height: auto;
     padding-bottom: 64px;
     display: flex;
