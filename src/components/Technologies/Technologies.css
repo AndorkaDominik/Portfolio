@@ -15,12 +15,13 @@
 .technology{
     /* background-color: rgb(26, 26, 26); */
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(26, 26, 26);
+    border: 2px solid rgb(26, 26, 26);
     padding: .625rem;
     border-radius: .75rem;
     width: 100%;
     display: flex;
     gap: 0.5rem;    
+    transition: all 0.3s ease-in-out;
 }
 
 .technology h3{
@@ -51,8 +52,6 @@
 
 .technology:hover{
     background-color: rgb(241, 241, 241);
-    border: 1px solid rgb(60, 60, 60);
-    transition: all 0.3s ease-in-out;
 }
 
 .technology-icon img{
