@@ -17,6 +17,46 @@ import { useLocation } from "react-router-dom";
 import Marquee from '../../components/Marquee/Marquee';
 import Technologies from '../../components/Technologies/Technologies';
 
+const projectsData = [
+  {
+    name: 'Andorka-VILL kft.',
+    id: 'AndorkaVILL',
+    link: '/projects/AndorkaVILL/',
+    techStack: ['React', 'CSS', 'Vite'],
+  },
+  {
+    name: 'LearnJava',
+    id: 'LearnJava',
+    link: '/projects/LearnJava/',
+    techStack: ['React', 'CSS', 'Java'],
+  },
+  {
+    name: 'EchoGPT',
+    id: 'EchoGPT',
+    link: '/projects/EchoGPT/',
+    techStack: ['React', 'OpenAI API', 'Vite'],
+  },
+  {
+    name: 'ConvertMe',
+    id: 'ConvertMe',
+    link: '/projects/ConvertMe/',
+    techStack: ['React', 'CSS', 'Blob'],
+  },
+  {
+    name: 'Quiz',
+    id: 'Quiz',
+    link: '/projects/Quiz/',
+    techStack: ['React', 'CSS', 'Vite'],
+  },
+  {
+    name: 'ReciMe',
+    id: 'ReciMe',
+    link: '/projects/ReciMe/',
+    techStack: ['React', 'CSS', 'VITE'],
+  },
+];
+
+
 const Home = () => {
   
   const containerRef = useRef(null);
@@ -73,30 +113,19 @@ const Home = () => {
         </div>
 
         <div className="cards">
-          <Link to={'/projects/AndorkaVILL/'} onClick={() => scrollToTop()}>
-            <div className="card" id='AndorkaVILL'></div>
-            <p>Andorka-VILL kft.</p>
-          </Link>
-          <Link to={'/projects/LearnJava/'} onClick={() => scrollToTop()}>
-            <div className="card" id='LearnJava'></div>
-            <p>LearnJava</p>
-          </Link>
-          <Link to={'/projects/EchoGPT/'} onClick={() => scrollToTop()}>
-            <div className="card" id='EchoGPT'></div>
-            <p>EchoGPT</p>
-          </Link>
-          <Link to={'/projects/ConvertMe/'} onClick={() => scrollToTop()}>
-            <div className="card" id='ConvertMe'></div>
-            <p>ConvertMe</p>
-          </Link>
-          <Link to={'/projects/Quiz/'} onClick={() => scrollToTop()}>
-            <div className="card" id='Quiz'></div>
-            <p>Quiz</p>
-          </Link>
-          <Link to={'/projects/ReciMe/'} onClick={() => scrollToTop()}>
-            <div className="card" id='ReciMe'></div>
-            <p>ReciMe</p>
-          </Link>
+          {projectsData.map((project, index) => (
+            <Link to={project.link} key={index} onClick={() => scrollToTop()} className='card-link'>
+              <div className="card" id={project.id}></div>
+              <p>{project.name}</p>
+              <div className="tech-stack">
+                <ul>
+                  {project.techStack.map((tech, techIndex) => (
+                    <li key={techIndex}>{tech}</li>
+                  ))}
+                </ul>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
 
