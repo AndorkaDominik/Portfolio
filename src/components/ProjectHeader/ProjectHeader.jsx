@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import "./ProjectHeader.css"
 import Click from '../../assets/click.webp'
 
-const Project = ({title, descript, team, img, website}) => {
+const Project = ({title, descript, team, img, website = null, game = null}) => {
 
   const [HU, setHU] = useState(false);
   const location = useLocation();
@@ -54,8 +54,9 @@ const Project = ({title, descript, team, img, website}) => {
       </div>
         <img tabIndex={-1} draggable={false} src={img} alt={title + " showcase image"} className="showcaseImg"/>
 
-        <a href={website} className='website'>
-          {HU ? <h1>Weboldal</h1> : <h1>Website</h1>}
+        <a href={website ? website : game} className='website' target='_blank'>
+          {website? (HU ? <h1>Weboldal</h1> : <h1>Website</h1>) : ""}
+          {game? (HU? <h1>Játék</h1>: <h1>Game</h1>) : ""}
           <img src={Click} alt="" />
         </a>
     </div>

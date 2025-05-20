@@ -15,6 +15,7 @@ import ConvertMe from './pages/Projects/ConvertMe/ConvertMe.jsx';
 import Quiz from './pages/Projects/Quiz/Quiz.jsx';
 import ReciMe from './pages/Projects/ReciMe/ReciMe.jsx';
 import EchoGPT from './pages/Projects/EchoGPT/EchoGPT.jsx';
+import Fungorium from './pages/Projects/Fungorium/Fungorium.jsx';
 
 // HU
 import AndorkaVILLHU from './pages/Projects/AndorkaVILL/AndorkaVILLHU.jsx';
@@ -23,10 +24,10 @@ import ConvertMeHU from './pages/Projects/ConvertMe/ConvertMeHU.jsx';
 import ReciMeHU from './pages/Projects/ReciMe/ReciMeHU.jsx';
 import QuizHU from './pages/Projects/Quiz/QuizHU.jsx';
 import EchoGPTHU from './pages/Projects/EchoGPT/EchoGPTHU.jsx';
+import FungoriumHU from './pages/Projects/Fungorium/FungoriumHU.jsx';
 
 // Animation
 import { RotationProvider } from './context/RotationContext.jsx';
-
 function App() {
   const [HU, setHU] = useState(false);
   const location = useLocation();
@@ -53,6 +54,7 @@ function App() {
                 <Route path='/projects/Quiz/' element={<Quiz />} />
                 <Route path='/projects/ReciMe/' element={<ReciMe />} />
                 <Route path='/projects/EchoGPT/' element={<EchoGPT />} />
+                <Route path='/projects/Fungorium/' element={<Fungorium />} />
 
                 {/* Blog */}
 
@@ -66,6 +68,8 @@ function App() {
                 <Route path='/HU/projects/EchoGPT/' element={<EchoGPTHU />} />
                 <Route path='/HU/projects/ConvertMe/' element={<ConvertMeHU />} />
                 <Route path='/HU/projects/ReciMe/' element={<ReciMeHU />} />
+                <Route path='/HU/projects/Fungorium/' element={<FungoriumHU />} />
+
               {/* Blog */}
               
               

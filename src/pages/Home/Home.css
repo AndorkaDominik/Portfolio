@@ -237,6 +237,18 @@
     margin-bottom: 20px;
 }
 /* BG CHANGE */
+#Fungorium{
+    background-image: url('/fungorium.webp');
+}
+
+#Fungorium::before {
+    background-image: url('/Projects/Pre-Fungorium.webp');
+}
+
+#Fungorium:hover::before {
+    opacity: 1;
+}
+
 /* AndorkaVILL */
 #AndorkaVILL{
     background-image: url('/AndorkaVILL.webp');

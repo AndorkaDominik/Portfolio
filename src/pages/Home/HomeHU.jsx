@@ -27,6 +27,12 @@ function MyDocument() {
 
 const projectsData = [
   {
+    name: 'Fungorium game',
+    id: 'Fungorium',
+    link: '/projects/Fungorium/',
+    techStack: ['Java', 'HTML', 'SH'],
+  },
+  {
     name: 'Andorka-VILL kft.',
     id: 'AndorkaVILL',
     link: '/projects/AndorkaVILL/',
