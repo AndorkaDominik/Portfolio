@@ -120,7 +120,7 @@ const Home = () => {
 
         <div className="cards">
           {projectsData.map((project, index) => (
-                      <Link to={project.link} key={index} onClick={() => scrollToTop()} className='card-link'>
+                      <Link to={"/HU"+project.link} key={index} onClick={() => scrollToTop()} className='card-link'>
                         <div className="card" id={project.id}></div>
                         <p>{project.name}</p>
                         <div className="tech-stack">
